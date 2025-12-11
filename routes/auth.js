@@ -3,6 +3,7 @@ const router = express.Router();
 const authController = require('../controllers/authController');
 const verifyToken = require('../middleware/verifyToken');
 
+
 // Public routes
 router.post('/register', authController.register);
 router.post('/login', authController.login);
